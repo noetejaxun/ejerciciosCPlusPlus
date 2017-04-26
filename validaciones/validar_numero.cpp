@@ -29,5 +29,7 @@ int main () {
                                                                                                     le asigna el valor a una variable entera llamada numero convirtiendo el valor de la variable
                                                                                                     char ingreseNumero mediante la funcion atoi().**/
     cout << "El numero ingresado fue: " << numero << endl;
+    cin.get();
+    cin.get();
     return 0;
 }
