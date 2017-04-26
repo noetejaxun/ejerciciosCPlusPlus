@@ -1,3 +1,5 @@
+// Validacion del ingreso de un numero entero
+
 #include <iostream>
 #include <stdlib.h> // Libreria para la funcion atoi() --> convierte tipo char a entero
 using namespace std;
