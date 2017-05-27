@@ -1,0 +1,10 @@
+﻿  AddUser.cpp
+c:\users\noete\desktop\biblioteca\biblioteca\AddUser.h(342): warning C4101: 'usuarioPassword': variable local sin referencia
+  MyForm.cpp
+c:\users\noete\desktop\biblioteca\biblioteca\AddUser.h(342): warning C4101: 'usuarioPassword': variable local sin referencia
+c:\users\noete\desktop\biblioteca\biblioteca\sistema.h(302): warning C4101: 'myReader': variable local sin referencia
+  sistema.cpp
+c:\users\noete\desktop\biblioteca\biblioteca\sistema.h(302): warning C4101: 'myReader': variable local sin referencia
+  Generando código...
+  .NETFramework,Version=v4.5.1.AssemblyAttributes.cpp
+LINK : fatal error LNK1561: se debe definir el punto de entrada
