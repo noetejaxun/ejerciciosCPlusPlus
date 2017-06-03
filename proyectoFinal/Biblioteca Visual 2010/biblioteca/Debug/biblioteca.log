@@ -1,0 +1,25 @@
+﻿Compilación iniciada a las 03/06/2017 03:20:31.
+     1>Proyecto "C:\Users\noete\Desktop\biblioteca\biblioteca\biblioteca.vcxproj" en el nodo 2 (build destinos).
+     1>InitializeBuildStatus:
+         Se creará "Debug\biblioteca.unsuccessfulbuild" porque se especificó "AlwaysCreate".
+       GenerateTargetFrameworkMonikerAttribute:
+       Se omitirá el destino "GenerateTargetFrameworkMonikerAttribute" porque todos los archivos de salida están actualizados respecto a los archivos de entrada.
+       ClCompile:
+         Todas las salidas están actualizadas.
+         Todas las salidas están actualizadas.
+         Todas las salidas están actualizadas.
+       CoreResGen:
+         No hay ningún recurso obsoleto con respecto a sus archivos de origen. Se omitirá la generación de recursos.
+       ResourceCompile:
+         Todas las salidas están actualizadas.
+       Link:
+         Todas las salidas están actualizadas.
+         biblioteca.vcxproj -> C:\Users\noete\Desktop\biblioteca\Debug\biblioteca.exe
+       FinalizeBuildStatus:
+         Se eliminará el archivo "Debug\biblioteca.unsuccessfulbuild".
+         Aplicando tarea Touch a "Debug\biblioteca.lastbuildstate".
+     1>Compilación del proyecto terminada "C:\Users\noete\Desktop\biblioteca\biblioteca\biblioteca.vcxproj" (build destinos).
+
+Compilación correcta.
+
+Tiempo transcurrido 00:00:00.89
