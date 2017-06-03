@@ -39,7 +39,7 @@ namespace Biblioteca {
 	protected:
 
 	protected:
-	private: System::Windows::Forms::Button^  salir;
+
 	private: System::Windows::Forms::Button^  guardar;
 
 	private: System::Windows::Forms::TextBox^  password;
@@ -72,7 +72,6 @@ namespace Biblioteca {
 		{
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(AddUser::typeid));
 			this->volver = (gcnew System::Windows::Forms::Button());
-			this->salir = (gcnew System::Windows::Forms::Button());
 			this->guardar = (gcnew System::Windows::Forms::Button());
 			this->password = (gcnew System::Windows::Forms::TextBox());
 			this->user = (gcnew System::Windows::Forms::TextBox());
@@ -100,35 +99,14 @@ namespace Biblioteca {
 			this->volver->Font = (gcnew System::Drawing::Font(L"Bebas Neue Book", 16, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->volver->ForeColor = System::Drawing::Color::White;
-			this->volver->Location = System::Drawing::Point(216, 251);
+			this->volver->Location = System::Drawing::Point(325, 249);
 			this->volver->Name = L"volver";
-			this->volver->Size = System::Drawing::Size(100, 40);
+			this->volver->Size = System::Drawing::Size(110, 40);
 			this->volver->TabIndex = 7;
 			this->volver->Text = L"Volver";
 			this->volver->TextImageRelation = System::Windows::Forms::TextImageRelation::ImageBeforeText;
 			this->volver->UseVisualStyleBackColor = false;
 			this->volver->Click += gcnew System::EventHandler(this, &AddUser::volver_Click);
-			// 
-			// salir
-			// 
-			this->salir->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(190)), static_cast<System::Int32>(static_cast<System::Byte>(22)),
-				static_cast<System::Int32>(static_cast<System::Byte>(34)));
-			this->salir->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->salir->FlatAppearance->BorderColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(155)),
-				static_cast<System::Int32>(static_cast<System::Byte>(13)), static_cast<System::Int32>(static_cast<System::Byte>(30)));
-			this->salir->FlatAppearance->BorderSize = 3;
-			this->salir->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->salir->Font = (gcnew System::Drawing::Font(L"Bebas Neue Book", 16, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->salir->ForeColor = System::Drawing::Color::White;
-			this->salir->Location = System::Drawing::Point(335, 251);
-			this->salir->Name = L"salir";
-			this->salir->Size = System::Drawing::Size(100, 40);
-			this->salir->TabIndex = 8;
-			this->salir->Text = L"Salir";
-			this->salir->TextImageRelation = System::Windows::Forms::TextImageRelation::ImageBeforeText;
-			this->salir->UseVisualStyleBackColor = false;
-			this->salir->Click += gcnew System::EventHandler(this, &AddUser::salir_Click);
 			// 
 			// guardar
 			// 
@@ -142,9 +120,9 @@ namespace Biblioteca {
 			this->guardar->Font = (gcnew System::Drawing::Font(L"Bebas Neue Book", 16, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->guardar->ForeColor = System::Drawing::Color::White;
-			this->guardar->Location = System::Drawing::Point(99, 251);
+			this->guardar->Location = System::Drawing::Point(195, 249);
 			this->guardar->Name = L"guardar";
-			this->guardar->Size = System::Drawing::Size(100, 40);
+			this->guardar->Size = System::Drawing::Size(110, 40);
 			this->guardar->TabIndex = 6;
 			this->guardar->Text = L"Guardar";
 			this->guardar->TextImageRelation = System::Windows::Forms::TextImageRelation::ImageBeforeText;
@@ -153,25 +131,24 @@ namespace Biblioteca {
 			// 
 			// password
 			// 
-			this->password->Font = (gcnew System::Drawing::Font(L"Adobe Heiti Std R", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(128)));
+			this->password->Font = (gcnew System::Drawing::Font(L"Amiri", 11));
 			this->password->Location = System::Drawing::Point(195, 134);
 			this->password->Name = L"password";
 			this->password->PasswordChar = '*';
-			this->password->Size = System::Drawing::Size(240, 31);
+			this->password->Size = System::Drawing::Size(240, 33);
 			this->password->TabIndex = 2;
 			// 
 			// user
 			// 
 			this->user->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-			this->user->Font = (gcnew System::Drawing::Font(L"Adobe Heiti Std R", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(128)));
+			this->user->Font = (gcnew System::Drawing::Font(L"Amiri", 11, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
 			this->user->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->user->Location = System::Drawing::Point(195, 77);
 			this->user->Margin = System::Windows::Forms::Padding(0);
 			this->user->Name = L"user";
-			this->user->Size = System::Drawing::Size(240, 31);
+			this->user->Size = System::Drawing::Size(240, 33);
 			this->user->TabIndex = 1;
 			// 
 			// lblPass
@@ -202,13 +179,13 @@ namespace Biblioteca {
 			// 
 			// confirm
 			// 
-			this->confirm->Font = (gcnew System::Drawing::Font(L"Adobe Heiti Std R", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(128)));
+			this->confirm->Font = (gcnew System::Drawing::Font(L"Amiri", 11));
 			this->confirm->Location = System::Drawing::Point(195, 190);
 			this->confirm->Name = L"confirm";
 			this->confirm->PasswordChar = '*';
-			this->confirm->Size = System::Drawing::Size(240, 31);
+			this->confirm->Size = System::Drawing::Size(240, 33);
 			this->confirm->TabIndex = 3;
+			this->confirm->TextChanged += gcnew System::EventHandler(this, &AddUser::confirm_TextChanged);
 			// 
 			// confirmar
 			// 
@@ -293,7 +270,6 @@ namespace Biblioteca {
 			this->Controls->Add(this->confirm);
 			this->Controls->Add(this->confirmar);
 			this->Controls->Add(this->volver);
-			this->Controls->Add(this->salir);
 			this->Controls->Add(this->guardar);
 			this->Controls->Add(this->password);
 			this->Controls->Add(this->user);
@@ -303,6 +279,7 @@ namespace Biblioteca {
 			this->Name = L"AddUser";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Nuevo usuario";
+			this->Load += gcnew System::EventHandler(this, &AddUser::AddUser_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->imgHombre))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->imgMujer))->EndInit();
 			this->ResumeLayout(false);
@@ -321,54 +298,62 @@ namespace Biblioteca {
 	private: System::Void salir_Click(System::Object^  sender, System::EventArgs^  e) {
 		Application::Exit();
 	}
-private: System::Void volver_Click(System::Object^  sender, System::EventArgs^  e) {
-	this->Close();
-}
-private: System::Void guardar_Click(System::Object^  sender, System::EventArgs^  e) {
-	int sexo;
-	if (hombre->Checked == true) { sexo = 1; } else { sexo = 2; }
-	// Conexion de base de datos
-	String^ constructor = L"datasource=localhost;port=3306;username=root;password=root;";
-	MySqlConnection^ conDataBase = gcnew MySqlConnection(constructor);
-	MySqlCommand^ cmdDataBase = gcnew MySqlCommand("INSERT INTO biblioteca.usuario (id, nombre, password, sexo) VALUES(null, '" + this->user->Text + "', '"+ this->password->Text + "', " + sexo +");", conDataBase); //Consulta por medio del nombre de usuario
-	MySqlCommand^ cmdDataBaseCon = gcnew MySqlCommand("SELECT * FROM biblioteca.usuario WHERE nombre = '" + this->user->Text + "';", conDataBase); //Consulta por medio del nombre de usuario
-	MySqlDataReader^ myReader;
+	private: System::Void volver_Click(System::Object^  sender, System::EventArgs^  e) {
+		this->Close();
+	}
+	private: System::Void guardar_Click(System::Object^  sender, System::EventArgs^  e) {
+		int sexo;
+		if (hombre->Checked == true) { sexo = 1; }
+		else { sexo = 2; }
+		// Conexion de base de datos
+		String^ constructor = L"datasource=localhost;port=3306;username=root;password=root;";
+		MySqlConnection^ conDataBase = gcnew MySqlConnection(constructor);
+		MySqlCommand^ cmdDataBase = gcnew MySqlCommand("INSERT INTO biblioteca.usuario (id, nombre, password, sexo) VALUES(null, '" + this->user->Text + "', '" + this->password->Text + "', " + sexo + ");", conDataBase); //Consulta por medio del nombre de usuario
+		MySqlCommand^ cmdDataBaseCon = gcnew MySqlCommand("SELECT * FROM biblioteca.usuario WHERE nombre = '" + this->user->Text + "';", conDataBase); //Consulta por medio del nombre de usuario
+		MySqlDataReader^ myReader;
 
-	try {
-		//Comprobar usuario existente
-		conDataBase->Open(); // Abrir la conexion de la base de datos
-		myReader = cmdDataBaseCon->ExecuteReader();
-		String^ usuario;
-		String^ usuarioPassword;
-
-		while (myReader->Read()) {
-			usuario = (myReader->GetString("nombre"));
-		}
-		conDataBase->Close();
-
-		if (this->user->Text == "" || this->password->Text == "" || confirm->Text == "") {
-			MessageBox::Show("Debe de llenar todos los campos", "Oh-oh", MessageBoxButtons::OK, MessageBoxIcon::Exclamation);
-		} else if (this->user->Text == usuario) { // Comprueba si el texto escrito en textbox es igual al usuario en BD
-			MessageBox::Show("Este usuario no esta disponible", "Oh-oh", MessageBoxButtons::OK, MessageBoxIcon::Exclamation);
-		} else if (!(this->password->Text == this->confirm->Text)) {
-			MessageBox::Show("Las contraseñas no coinciden", "Oh-oh", MessageBoxButtons::OK, MessageBoxIcon::Error);
-		} else {
+		try {
+			//Comprobar usuario existente
 			conDataBase->Open(); // Abrir la conexion de la base de datos
-			myReader = cmdDataBase->ExecuteReader();
+			myReader = cmdDataBaseCon->ExecuteReader();
+			String^ usuario;
+			//String^ usuarioPassword;
+
+			while (myReader->Read()) {
+				usuario = (myReader->GetString("nombre"));
+			}
 			conDataBase->Close();
-			MessageBox::Show("Usuario creado exitosamente", "Genial", MessageBoxButtons::OK, MessageBoxIcon::Information);
-			user->Enabled = false;
-			password->Enabled = false;
-			confirm->Enabled = false;
-			guardar->Enabled = false;
-			hombre->Enabled = false;
-			mujer->Enabled = false;
+
+			if (this->user->Text == "" || this->password->Text == "" || confirm->Text == "") {
+				MessageBox::Show("Debe de llenar todos los campos", "Oh-oh", MessageBoxButtons::OK, MessageBoxIcon::Exclamation);
+			}
+			else if (this->user->Text == usuario) { // Comprueba si el texto escrito en textbox es igual al usuario en BD
+				MessageBox::Show("Este usuario no esta disponible", "Oh-oh", MessageBoxButtons::OK, MessageBoxIcon::Exclamation);
+			}
+			else if (!(this->password->Text == this->confirm->Text)) {
+				MessageBox::Show("Las contraseñas no coinciden", "Oh-oh", MessageBoxButtons::OK, MessageBoxIcon::Error);
+			}
+			else {
+				conDataBase->Open(); // Abrir la conexion de la base de datos
+				myReader = cmdDataBase->ExecuteReader();
+				conDataBase->Close();
+				MessageBox::Show("Usuario creado exitosamente", "Genial", MessageBoxButtons::OK, MessageBoxIcon::Information);
+				user->Enabled = false;
+				password->Enabled = false;
+				confirm->Enabled = false;
+				guardar->Enabled = false;
+				hombre->Enabled = false;
+				mujer->Enabled = false;
+			}
+			conDataBase->Close();
 		}
-		conDataBase->Close();
+		catch (Exception^ ex) {
+			MessageBox::Show(ex->Message);
+		}
 	}
-	catch (Exception^ ex) {
-		MessageBox::Show(ex->Message);
+	private: System::Void AddUser_Load(System::Object^  sender, System::EventArgs^  e) {
 	}
-}
-};
+	private: System::Void confirm_TextChanged(System::Object^  sender, System::EventArgs^  e) {
+	}
+	};
 }

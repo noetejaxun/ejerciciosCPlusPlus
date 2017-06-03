@@ -139,18 +139,54 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AddUser.cpp" />
+    <ClCompile Include="AdministrarUsuarios.cpp" />
     <ClCompile Include="agregarReg.cpp" />
+    <ClCompile Include="buscarUsuario.cpp" />
+    <ClCompile Include="consultas.cpp" />
+    <ClCompile Include="editarReg.cpp" />
+    <ClCompile Include="eliminarLibro.cpp" />
+    <ClCompile Include="eliminarUsuario.cpp" />
+    <ClCompile Include="information.cpp" />
+    <ClCompile Include="modificarUsuario.cpp" />
     <ClCompile Include="MyForm.cpp" />
+    <ClCompile Include="searchLibro.cpp" />
     <ClCompile Include="sistema.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AddUser.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="AdministrarUsuarios.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="agregarReg.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="buscarUsuario.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="consultas.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="editarReg.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="eliminarLibro.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="eliminarUsuario.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="information.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="modificarUsuario.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="MyForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="searchLibro.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="sistema.h">
@@ -163,6 +199,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="agregarReg.resx">
       <DependentUpon>agregarReg.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editarReg.resx">
+      <DependentUpon>editarReg.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modificarUsuario.resx">
+      <DependentUpon>modificarUsuario.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MyForm.resx">
       <DependentUpon>MyForm.h</DependentUpon>

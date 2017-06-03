@@ -1,5 +1,4 @@
 #pragma once
-#include <stdlib.h>
 
 namespace Biblioteca {
 
@@ -71,7 +70,7 @@ namespace Biblioteca {
 	private: System::Windows::Forms::Label^  lblEstanteria;
 
 	private: System::Windows::Forms::Button^  volver;
-	private: System::Windows::Forms::Button^  salir;
+
 	private: System::Windows::Forms::Button^  guardar;
 	private: System::Windows::Forms::GroupBox^  groupBox1;
 	private: System::Windows::Forms::PictureBox^  imgHombre;
@@ -105,27 +104,25 @@ namespace Biblioteca {
 			this->Estanteria = (gcnew System::Windows::Forms::MaskedTextBox());
 			this->lblEstanteria = (gcnew System::Windows::Forms::Label());
 			this->volver = (gcnew System::Windows::Forms::Button());
-			this->salir = (gcnew System::Windows::Forms::Button());
 			this->guardar = (gcnew System::Windows::Forms::Button());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
 			this->imgHombre = (gcnew System::Windows::Forms::PictureBox());
 			this->nuevo = (gcnew System::Windows::Forms::Button());
 			this->groupBox1->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->imgHombre))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->imgHombre))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// Nombre
 			// 
 			this->Nombre->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
 			this->Nombre->Enabled = false;
-			this->Nombre->Font = (gcnew System::Drawing::Font(L"Adobe Heiti Std R", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(128)));
+			this->Nombre->Font = (gcnew System::Drawing::Font(L"Amiri", 11));
 			this->Nombre->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)));
-			this->Nombre->Location = System::Drawing::Point(157, 88);
+			this->Nombre->Location = System::Drawing::Point(157, 82);
 			this->Nombre->Margin = System::Windows::Forms::Padding(0);
 			this->Nombre->Name = L"Nombre";
-			this->Nombre->Size = System::Drawing::Size(240, 31);
+			this->Nombre->Size = System::Drawing::Size(240, 33);
 			this->Nombre->TabIndex = 2;
 			// 
 			// lblNombre
@@ -157,26 +154,25 @@ namespace Biblioteca {
 			// Codigo
 			// 
 			this->Codigo->Enabled = false;
-			this->Codigo->Font = (gcnew System::Drawing::Font(L"Adobe Heiti Std R", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->Codigo->Location = System::Drawing::Point(157, 42);
+			this->Codigo->Font = (gcnew System::Drawing::Font(L"Amiri", 11));
+			this->Codigo->Location = System::Drawing::Point(157, 36);
 			this->Codigo->Mask = L"9999999999";
 			this->Codigo->Name = L"Codigo";
-			this->Codigo->Size = System::Drawing::Size(120, 31);
+			this->Codigo->Size = System::Drawing::Size(120, 33);
 			this->Codigo->TabIndex = 1;
+			this->Codigo->Text = L"000000000";
 			// 
 			// Autor
 			// 
 			this->Autor->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
 			this->Autor->Enabled = false;
-			this->Autor->Font = (gcnew System::Drawing::Font(L"Adobe Heiti Std R", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(128)));
+			this->Autor->Font = (gcnew System::Drawing::Font(L"Amiri", 11));
 			this->Autor->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)));
-			this->Autor->Location = System::Drawing::Point(157, 134);
+			this->Autor->Location = System::Drawing::Point(157, 128);
 			this->Autor->Margin = System::Windows::Forms::Padding(0);
 			this->Autor->Name = L"Autor";
-			this->Autor->Size = System::Drawing::Size(240, 31);
+			this->Autor->Size = System::Drawing::Size(240, 33);
 			this->Autor->TabIndex = 3;
 			// 
 			// lblAutor
@@ -195,12 +191,11 @@ namespace Biblioteca {
 			// Fecha
 			// 
 			this->Fecha->Enabled = false;
-			this->Fecha->Font = (gcnew System::Drawing::Font(L"Adobe Heiti Std R", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->Fecha->Location = System::Drawing::Point(157, 180);
+			this->Fecha->Font = (gcnew System::Drawing::Font(L"Amiri", 11));
+			this->Fecha->Location = System::Drawing::Point(157, 174);
 			this->Fecha->Mask = L"9999";
 			this->Fecha->Name = L"Fecha";
-			this->Fecha->Size = System::Drawing::Size(120, 31);
+			this->Fecha->Size = System::Drawing::Size(120, 33);
 			this->Fecha->TabIndex = 4;
 			// 
 			// lblFecha
@@ -220,14 +215,13 @@ namespace Biblioteca {
 			// 
 			this->Categoria->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
 			this->Categoria->Enabled = false;
-			this->Categoria->Font = (gcnew System::Drawing::Font(L"Adobe Heiti Std R", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(128)));
+			this->Categoria->Font = (gcnew System::Drawing::Font(L"Amiri", 11));
 			this->Categoria->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)));
-			this->Categoria->Location = System::Drawing::Point(157, 226);
+			this->Categoria->Location = System::Drawing::Point(157, 220);
 			this->Categoria->Margin = System::Windows::Forms::Padding(0);
 			this->Categoria->Name = L"Categoria";
-			this->Categoria->Size = System::Drawing::Size(240, 31);
+			this->Categoria->Size = System::Drawing::Size(240, 33);
 			this->Categoria->TabIndex = 5;
 			// 
 			// lblCategoria
@@ -246,12 +240,11 @@ namespace Biblioteca {
 			// Estanteria
 			// 
 			this->Estanteria->Enabled = false;
-			this->Estanteria->Font = (gcnew System::Drawing::Font(L"Adobe Heiti Std R", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->Estanteria->Location = System::Drawing::Point(157, 272);
+			this->Estanteria->Font = (gcnew System::Drawing::Font(L"Amiri", 11));
+			this->Estanteria->Location = System::Drawing::Point(157, 266);
 			this->Estanteria->Mask = L"9999";
 			this->Estanteria->Name = L"Estanteria";
-			this->Estanteria->Size = System::Drawing::Size(120, 31);
+			this->Estanteria->Size = System::Drawing::Size(120, 33);
 			this->Estanteria->TabIndex = 6;
 			// 
 			// lblEstanteria
@@ -279,35 +272,14 @@ namespace Biblioteca {
 			this->volver->Font = (gcnew System::Drawing::Font(L"Bebas Neue Book", 16, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->volver->ForeColor = System::Drawing::Color::White;
-			this->volver->Location = System::Drawing::Point(353, 366);
+			this->volver->Location = System::Drawing::Point(403, 366);
 			this->volver->Name = L"volver";
-			this->volver->Size = System::Drawing::Size(100, 40);
+			this->volver->Size = System::Drawing::Size(120, 40);
 			this->volver->TabIndex = 9;
 			this->volver->Text = L"Volver";
 			this->volver->TextImageRelation = System::Windows::Forms::TextImageRelation::ImageBeforeText;
 			this->volver->UseVisualStyleBackColor = false;
 			this->volver->Click += gcnew System::EventHandler(this, &agregarReg::volver_Click);
-			// 
-			// salir
-			// 
-			this->salir->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(190)), static_cast<System::Int32>(static_cast<System::Byte>(22)),
-				static_cast<System::Int32>(static_cast<System::Byte>(34)));
-			this->salir->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->salir->FlatAppearance->BorderColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(155)),
-				static_cast<System::Int32>(static_cast<System::Byte>(13)), static_cast<System::Int32>(static_cast<System::Byte>(30)));
-			this->salir->FlatAppearance->BorderSize = 3;
-			this->salir->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->salir->Font = (gcnew System::Drawing::Font(L"Bebas Neue Book", 16, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->salir->ForeColor = System::Drawing::Color::White;
-			this->salir->Location = System::Drawing::Point(470, 366);
-			this->salir->Name = L"salir";
-			this->salir->Size = System::Drawing::Size(100, 40);
-			this->salir->TabIndex = 10;
-			this->salir->Text = L"Salir";
-			this->salir->TextImageRelation = System::Windows::Forms::TextImageRelation::ImageBeforeText;
-			this->salir->UseVisualStyleBackColor = false;
-			this->salir->Click += gcnew System::EventHandler(this, &agregarReg::salir_Click);
 			// 
 			// guardar
 			// 
@@ -322,9 +294,9 @@ namespace Biblioteca {
 			this->guardar->Font = (gcnew System::Drawing::Font(L"Bebas Neue Book", 16, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->guardar->ForeColor = System::Drawing::Color::White;
-			this->guardar->Location = System::Drawing::Point(114, 366);
+			this->guardar->Location = System::Drawing::Point(124, 366);
 			this->guardar->Name = L"guardar";
-			this->guardar->Size = System::Drawing::Size(100, 40);
+			this->guardar->Size = System::Drawing::Size(120, 40);
 			this->guardar->TabIndex = 7;
 			this->guardar->Text = L"Guardar";
 			this->guardar->TextImageRelation = System::Windows::Forms::TextImageRelation::ImageBeforeText;
@@ -357,7 +329,7 @@ namespace Biblioteca {
 			// imgHombre
 			// 
 			this->imgHombre->BackColor = System::Drawing::Color::Transparent;
-			this->imgHombre->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"imgHombre.Image")));
+			this->imgHombre->Image = (cli::safe_cast<System::Drawing::Image^  >(resources->GetObject(L"imgHombre.Image")));
 			this->imgHombre->Location = System::Drawing::Point(452, 87);
 			this->imgHombre->Name = L"imgHombre";
 			this->imgHombre->Size = System::Drawing::Size(170, 170);
@@ -377,9 +349,9 @@ namespace Biblioteca {
 			this->nuevo->Font = (gcnew System::Drawing::Font(L"Bebas Neue Book", 16, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->nuevo->ForeColor = System::Drawing::Color::White;
-			this->nuevo->Location = System::Drawing::Point(233, 366);
+			this->nuevo->Location = System::Drawing::Point(263, 366);
 			this->nuevo->Name = L"nuevo";
-			this->nuevo->Size = System::Drawing::Size(100, 40);
+			this->nuevo->Size = System::Drawing::Size(120, 40);
 			this->nuevo->TabIndex = 8;
 			this->nuevo->Text = L"Nuevo";
 			this->nuevo->TextImageRelation = System::Windows::Forms::TextImageRelation::ImageBeforeText;
@@ -396,7 +368,6 @@ namespace Biblioteca {
 			this->Controls->Add(this->nuevo);
 			this->Controls->Add(this->groupBox1);
 			this->Controls->Add(this->volver);
-			this->Controls->Add(this->salir);
 			this->Controls->Add(this->guardar);
 			this->Font = (gcnew System::Drawing::Font(L"Bebas Neue Book", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
@@ -408,7 +379,7 @@ namespace Biblioteca {
 			this->Text = L"Agregar nuevo libro";
 			this->groupBox1->ResumeLayout(false);
 			this->groupBox1->PerformLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->imgHombre))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->imgHombre))->EndInit();
 			this->ResumeLayout(false);
 
 		}
@@ -416,70 +387,68 @@ namespace Biblioteca {
 	private: System::Void salir_Click(System::Object^  sender, System::EventArgs^  e) {
 		Application::Exit();
 	}
-private: System::Void volver_Click(System::Object^  sender, System::EventArgs^  e) {
-	this->Close();
-}
-private: System::Void guardar_Click(System::Object^  sender, System::EventArgs^  e) {
-	String^ constructor = L"datasource=localhost;port=3306;username=root;password=root;";
-	MySqlConnection^ conDataBase = gcnew MySqlConnection(constructor);
-	MySqlCommand^ cmdDataBase = gcnew MySqlCommand("INSERT INTO biblioteca.libro (id, nombre, autor, fecha, categoria, estanteria) VALUES(" + this->Codigo->Text + ", '" + this->Nombre->Text + "', '" + this->Autor->Text + "', " + this->Fecha->Text + ", '" + this->Categoria->Text + "', " + this->Estanteria->Text + ");", conDataBase); //Consulta por medio del nombre de usuario
-	MySqlCommand^ cmdDataBaseCon = gcnew MySqlCommand("SELECT * FROM biblioteca.usuario WHERE id = " + this->Codigo->Text + ";", conDataBase); //Consulta por medio del nombre de usuario
-	MySqlDataReader^ myReader;
+	private: System::Void volver_Click(System::Object^  sender, System::EventArgs^  e) {
+		this->Close();
+	}
+	private: System::Void guardar_Click(System::Object^  sender, System::EventArgs^  e) {
+		String^ constructor = L"datasource=localhost;port=3306;username=root;password=root;";
+		MySqlConnection^ conDataBase = gcnew MySqlConnection(constructor);
+		MySqlCommand^ cmdDataBase = gcnew MySqlCommand("INSERT INTO biblioteca.libro (id, nombre, autor, fecha, categoria, estanteria) VALUES(" + this->Codigo->Text + ", '" + this->Nombre->Text + "', '" + this->Autor->Text + "', " + this->Fecha->Text + ", '" + this->Categoria->Text + "', " + this->Estanteria->Text + ");", conDataBase);
+		MySqlCommand^ cmdDataBaseCon = gcnew MySqlCommand("SELECT id FROM biblioteca.libro WHERE id = " + this->Codigo->Text + ";", conDataBase);
+		MySqlDataReader^ myReader;
 
-	try {
-		//Comprobar usuario existente
-		String^ codigo;
-		if (!(this->Codigo->Text == "")) { //Si la caja de texto codigo no esta vacia
-			conDataBase->Open(); // abre la conexion de la base de datos
-			myReader = cmdDataBaseCon->ExecuteReader(); // Ejecuta la consulta
+
+		try {
+			//Comprobar usuario existente
+			conDataBase->Open(); // Abrir la conexion de la base de datos
+			myReader = cmdDataBaseCon->ExecuteReader();
+			String^ codigo;
 
 			while (myReader->Read()) {
 				codigo = (myReader->GetString("id"));
 			}
 			conDataBase->Close();
-		}
 
-		if (this->Codigo->Text == "" || this->Nombre->Text == "" || this->Autor->Text == "" || this->Fecha->Text == "" || this->Categoria->Text == "" || this->Estanteria->Text == "") {
-			MessageBox::Show("Debe de llenar todos los campos", "Oh-oh", MessageBoxButtons::OK, MessageBoxIcon::Exclamation);
+			if (this->Codigo->Text == "" || this->Nombre->Text == "" || this->Autor->Text == "" || this->Fecha->Text == "" || this->Categoria->Text == "" || this->Estanteria->Text == "") {
+				MessageBox::Show("Debe de llenar todos los campos", "Oh-oh", MessageBoxButtons::OK, MessageBoxIcon::Exclamation);
+			}
+			else if (codigo == this->Codigo->Text) { // Comprueba si el texto escrito en textbox es igual al usuario en BD
+				MessageBox::Show("El codigo ya existe, por favor vuelva a intentar con uno nuevo", "Oh-oh", MessageBoxButtons::OK, MessageBoxIcon::Exclamation);
+			}
+			else {
+				conDataBase->Open(); // Abrir la conexion de la base de datos
+				myReader = cmdDataBase->ExecuteReader(); // Ejecutar el ingreso de datos
+				conDataBase->Close(); // Cerrar la conexion
+				MessageBox::Show("Libro agregado exitosamente!", "Genial", MessageBoxButtons::OK, MessageBoxIcon::Information);
+				this->Codigo->Enabled = false;
+				this->Nombre->Enabled = false;
+				this->Autor->Enabled = false;
+				this->Fecha->Enabled = false;
+				this->Categoria->Enabled = false;
+				this->Estanteria->Enabled = false;
+				this->guardar->Enabled = false;
+			}
+			conDataBase->Close();
 		}
-		else if (this->Codigo->Text == codigo) { // Comprueba si el texto escrito en textbox es igual al usuario en BD
-			
-			MessageBox::Show("El codigo ya existe, por favor vuelva a intentar con uno nuevo", "Oh-oh", MessageBoxButtons::OK, MessageBoxIcon::Exclamation);
+		catch (Exception^ ex) {
+			MessageBox::Show(ex->Message);
 		}
-		else {
-			conDataBase->Open(); // Abrir la conexion de la base de datos
-			myReader = cmdDataBase->ExecuteReader(); // Ejecutar el ingreso de datos
-			conDataBase->Close(); // Cerrar la conexion
-			MessageBox::Show("Libro agregado exitosamente!", "Genial", MessageBoxButtons::OK, MessageBoxIcon::Information);
-			this->Codigo->Enabled = false;
-			this->Nombre->Enabled = false;
-			this->Autor->Enabled = false;
-			this->Fecha->Enabled = false;
-			this->Categoria->Enabled = false;
-			this->Estanteria->Enabled = false;
-			this->guardar->Enabled = false;
-		}
-		conDataBase->Close();
 	}
-	catch (Exception^ ex) {
-		MessageBox::Show(ex->Message);
+	private: System::Void nuevo_Click(System::Object^  sender, System::EventArgs^  e) {
+		this->Codigo->Enabled = true;
+		this->Nombre->Enabled = true;
+		this->Autor->Enabled = true;
+		this->Fecha->Enabled = true;
+		this->Categoria->Enabled = true;
+		this->Estanteria->Enabled = true;
+		this->guardar->Enabled = true;
+		this->Codigo->Text = "000000000";
+		this->Nombre->Text = "";
+		this->Autor->Text = "";
+		this->Fecha->Text = "";
+		this->Categoria->Text = "";
+		this->Estanteria->Text = "";
+		this->Codigo->Focus();
 	}
-}
-private: System::Void nuevo_Click(System::Object^  sender, System::EventArgs^  e) {
-	this->Codigo->Enabled = true;
-	this->Nombre->Enabled = true;
-	this->Autor->Enabled = true;
-	this->Fecha->Enabled = true;
-	this->Categoria->Enabled = true;
-	this->Estanteria->Enabled = true;
-	this->guardar->Enabled = true;
-	this->Codigo->Text = "";
-	this->Nombre->Text = "";
-	this->Autor->Text = "";
-	this->Fecha->Text = "";
-	this->Categoria->Text = "";
-	this->Estanteria->Text = "";
-	this->Codigo->Focus();
-}
-};
+	};
 }
