@@ -1,0 +1,23 @@
+﻿  Listas dinamicas.cpp
+c:\users\noete\desktop\listas dinamicas\listas dinamicas\listas dinamicas.cpp(26): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\conio.h(452): note: vea la declaración de 'getch'
+c:\users\noete\desktop\listas dinamicas\listas dinamicas\listas dinamicas.cpp(32): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\conio.h(452): note: vea la declaración de 'getch'
+c:\users\noete\desktop\listas dinamicas\listas dinamicas\listas dinamicas.cpp(42): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\conio.h(452): note: vea la declaración de 'getch'
+c:\users\noete\desktop\listas dinamicas\listas dinamicas\listas dinamicas.cpp(50): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\conio.h(452): note: vea la declaración de 'getch'
+c:\users\noete\desktop\listas dinamicas\listas dinamicas\listas dinamicas.cpp(58): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\conio.h(452): note: vea la declaración de 'getch'
+c:\users\noete\desktop\listas dinamicas\listas dinamicas\listas dinamicas.cpp(68): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\conio.h(452): note: vea la declaración de 'getch'
+c:\users\noete\desktop\listas dinamicas\listas dinamicas\listas dinamicas.cpp(83): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\conio.h(452): note: vea la declaración de 'getch'
+c:\users\noete\desktop\listas dinamicas\listas dinamicas\listas dinamicas.cpp(92): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\conio.h(452): note: vea la declaración de 'getch'
+c:\users\noete\desktop\listas dinamicas\listas dinamicas\listas dinamicas.cpp(100): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\conio.h(452): note: vea la declaración de 'getch'
+c:\users\noete\desktop\listas dinamicas\listas dinamicas\listas dinamicas.cpp(109): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\conio.h(452): note: vea la declaración de 'getch'
+  Listas dinamicas.vcxproj -> C:\Users\noete\Desktop\Listas dinamicas\Debug\Listas dinamicas.exe
+  Listas dinamicas.vcxproj -> C:\Users\noete\Desktop\Listas dinamicas\Debug\Listas dinamicas.pdb (Partial PDB)
